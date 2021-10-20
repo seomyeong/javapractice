@@ -3,25 +3,10 @@ package jv200.mod003;
 public class MyDateTest {
 
 	public static void main(String[] args) {
-//		MyDate d = new MyDate();
-//		À§¿¡ ¿¡·¯°¡ ³². ÀÌ°ÍÀº argument¸¦ ¹ŞÁö ¾Ê´Â »ı¼ºÀÚ°¡ ¾ø´Ù. 
-//		Áï, ¿¡·¯°¡ ³ªÁö ¾ÊÀ¸·Á¸é argument¸¦ »ı¼ºÀÚ ´ë·Î ³Ö¾îÁÖ°Å³ª È¤Àº argument°¡ ¾ø´Â »ı¼ºÀÚ¸¦ ÇÏ³ª ´õ ¸¸µç´Ù.
-//		¿©±â¼­ ¾Ë ¼ö ÀÖ´Â °ÍÀº »ı¼ºÀÚ°¡ 1°³°¡ ¾Æ´Ò ¼ö ÀÖ´Ù´Â °Í.
-		
-//		MyDate d = new MyDate(26, 10, 2000);
-//		MyDate t = new MyDate(3, 7, 1999);
-		 
-//		t = d; // 3, 7, 1999 °ªÀº ¸Ş¸ğ¸® »ó¿¡ ³²¾ÆÀÖÁö¸¸ °¡¸®Å°´Â °ÍÀÌ ¾ø´Ù. ±×·¡¼­ ÂüÁ¶ÇÏ´Â°ÍÀÌ ¾ø¾î¼­ garbage collector°¡ ¾ğÁ¨°¡ °¡Á®°£´Ù.
-//		26, 10, 2000 / 3, 7, 1999 °´Ã¼´Â µÎ°³°¡ »ı¼ºµÇ´Âµ¥ t =d ´Â t °´Ã¼¿¡ d °ªÀ» ´ëÀÔÇÏ´Â°Ô ¾Æ´Ï¶ó Æ÷ÀÎÅÍÃ³·³ d °´Ã¼¿¡ Á¢±ÙÇÏ´Â ±× ÁÖ¼Ò°ªÀÌ t¿¡ ÀÖ°ÔµÊ.  
-		
-//		System.out.println(d.getDetails());
-
-
-		MyDate d = new MyDate(26,10,2000);
-		MyDate d2 = d.addDays(3);
-		
-		System.out.println(d2.getDetails());
-
+		MyDate d = new MyDate(26,10,2000); //argumentë¥¼ ë°›ì•„ì£¼ì§€ ì•Šìœ¼ë©´ ì—ëŸ¬ê°€ ë‚¨
+		MyDate t = new MyDate(3,7,1999);
+		t=d;
+		System.out.println(t.getDetails());
 	}
 
 }

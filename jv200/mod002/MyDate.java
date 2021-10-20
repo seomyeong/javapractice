@@ -4,6 +4,7 @@ public class MyDate {
 	private int day;
 	private int month;
 	private int year;
+	private char[] setDay;
 	
 	public int getDay() {
 		return day;
@@ -29,4 +30,16 @@ public class MyDate {
 	public String getDetails() {
 		return year+"-"+month+"-"+day;
 	}
+	
+	//main메소드를 만들어서 출력 가능
+	public static void main(String[] args) {
+		MyDate date = new MyDate();
+		date.setDay(21);
+		date.setMonth(3);
+		date.setYear(2021);
+			
+		System.out.println(date.year+", "+date.month+", "+date.day);
+		System.out.println(date.getDetails());
+	}
+	
 }
