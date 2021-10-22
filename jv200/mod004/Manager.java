@@ -1,4 +1,4 @@
-package jv200.mod006;
+package jv200.mod004;
 
 import java.util.Date; 
 
@@ -18,7 +18,7 @@ public class Manager extends Employee{
 		super(); // 何葛狼 积己磊. 积帆.
 	}
 	
-	public Manager(String name, double salary, MyDate birthDate, String department) {
+	public Manager(String name, double salary, Date birthDate, String department) {
 		super(name, salary, birthDate);
 		this.department = department;
 	}

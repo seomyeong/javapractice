@@ -1,13 +1,41 @@
 package jv200.mod006;
 
-import java.util.Date;
+//import java.util.Date; 
 
 public class Employee {
 	public String name = "";
 	public double salary;
-	public Date birthDate;
+	public MyDate birthDate;
 	
-	public String getDetails() {
-		return "ì´ë¦„ : "+name+"\nì—°ë´‰ : "+salary+"\nìƒì¼ : "+birthDate;
+	
+	public Employee() { // µğÆúÆ® »ı¼ºÀÚ
+		
 	}
+	
+	public Employee(String name, double salary, MyDate birthDate) {
+		this.name = name;
+		this.salary = salary;
+		this.birthDate = birthDate;
+	}
+	
+	public String getDetails() { 
+		return "ÀÌ¸§: "+name+"\n¿ù±Ş: "+salary+ "\n»ıÀÏ: "+ birthDate;
+	}
+	
+	//equals ¿À¹ö¶óÀÌµå
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Employee)) {
+			return false;
+		}
+		
+	//obj¸¦ EmployeeÅ¸ÀÔÀ¸·Î Çüº¯È¯
+	//birthDateµµ ¿À¹ö¶óÀÌµåÇØ¾ßÇÔ. main¸Ş¼Òµå¿¡¼­ ¶Ç new °´Ã¼·Î myDate¸¦ ¸¸µé¾ú±â ¶§¹®¿¡.
+	Employee e = (Employee)obj; //´ÙÇü¼º
+	if(e.name.equals(this.name) && e.birthDate.equals(this.birthDate)) {
+		return true;		
+	}
+	return false;
+} 
+
+	
 }

@@ -1,4 +1,4 @@
-package jv200.mod006;
+package jv200.mod004;
 
 public class EqualsTest {
 	public static void main(String[] args) {

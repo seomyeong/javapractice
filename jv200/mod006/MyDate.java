@@ -1,16 +1,15 @@
-package jv200.mod003;
-
+package jv200.mod006;
 
 /**
- *
- *
- * 이 클래스에 대한 설명
- *
- * @author Administrator
- *
- *         연도, 월, 일을 받아 넣는 클래스.
- * 
- **/
+*
+*
+* 이 클래스에 대한 설명
+*
+* @author Administrator
+*
+*         연도, 월, 일을 받아 넣는 클래스.
+* 
+**/
 
 public class MyDate {
 	private int day;
@@ -70,4 +69,16 @@ public class MyDate {
 	public String getDetails() { 
 		return year + "-" + month + "-" + day;
 	}	
+	
+	//MyDate에서 오버라이드
+	public boolean equals(Object obj) {
+		if(!(obj instanceof MyDate)) {
+			return false;
+		}
+		MyDate d = (MyDate)obj;
+		if(d.year==this.year && d.month == this.month && d.day == this.day){
+		return true;
+		}
+		return false;
+	}
 }

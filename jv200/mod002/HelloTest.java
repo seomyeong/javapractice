@@ -1,11 +1,9 @@
 package jv200.mod002;
 
 public class HelloTest {
-
+	
 	public static void main(String[] args) {
-//		Hello h = new Hello(); //ê°ì²´ë¥¼ ìƒì„±í•˜ë¼
-		Hello h=new Hello();
+		Hello h = new Hello(); // °´Ã¼ »ı¼º ? ¸Ş¸ğ¸®¿¡ Á¸Àç(not HW) ±×·¡¼­ °´Ã¼ »ı¼º ¸¹À»¼ö·Ï ¸Ş¸ğ¸®°¡ ¸¹ÀÌ ÇÊ¿äÇÏ´Ù.
 		h.sayHello();
 	}
-
 }

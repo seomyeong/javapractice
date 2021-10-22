@@ -1,26 +1,28 @@
 package jv200.mod003;
 
 public class Assign {
+
 	public static void main(String[] args) {
-		//ì •ìˆ˜ íƒ€ì… ì„ ì–¸
+		//Á¤¼ö Å¸ÀÔ ¼±¾ğ
 		int x;
 		int y;
+		
 		//floating
-		float z= 3.14f;
+		float z = 3.14f;
 		//double
 		double w = 3.14;
 		//boolean
 		boolean truth = true;
-		//chart
+		//char 
 		char c = 'A';
 		String str = "A";
-		
-		z=-1;
+
+		z = -1;
 		byte b = 10;
-		x=b; //ì‘ì€ ì‚¬ì´ì¦ˆê°€ í° ì‚¬ì´ì¦ˆì— ë‹´ê¸°ëŠ” ê²ƒì€ ê°€ëŠ¥
-		b=(byte)x; //casting. xë¥¼ byteë¡œ ë°”ê¾¸ë©´ bì— ê°’ì„ ë„£ì„ ìˆ˜ ìˆë‹¤. 
+		x = b; // °¡´É. ÀÛÀº »çÀÌÁîÀÎ byte¿¡¼­ int·Î ´ã±â´Â °ÍÀº °¡´ÉÇÏ´Ù. ¹İ´ë´Â ¾ÈµÊ.
+//		b = x; ¿¡·¯³² Å«»çÀÌÁî¸¦ ÀÛÀº »çÀÌÁî¿¡ ´ã´Â°Å´Ï±î. ÇÏÁö¸¸ ¾Æ·¡Ã³·³ ÇÏ¸é ´ãÀ» ¼ö ÀÖ´Ù. 
+		b = (byte) x; // casting  ; °¡´ÉÇÏ´Ù´Â°ÍÀº ÄÄÆÄÀÏ µÇ°í ½ÇÇà µÈ´Ù´Â °Í. ÇÏÁö¸¸ byte¿¡ µé¾î°¥ ¼ö ¾ø´Â Å©±âÀÇ ¼ıÀÚ¸¦ ³ÖÀ¸¸é µ¥ÀÌÅÍ°¡ ±úÁø´Ù.
 		
-		long l=100000;
-		float f=100000;
 	}
+
 }

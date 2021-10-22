@@ -1,33 +1,32 @@
 package jv200.mod002;
+
 import java.lang.*;
 
-public class Foo {
-	//ì†ì„±, Member variable
-	private int x;
-	private float y=1000.0f;
-	private String name="Korea";
-	
-	//ìƒì„±ì
-	public Foo() {
-		System.out.println("ìƒì„±ì:Constructor");
-	}
 
-	//ë©”ì†Œë“œ
-	public void sayHello() {
-		int x=100; //ì§€ì—­ë³€ìˆ˜(local variable)
+public class Foo {
+	//¼Ó¼º
+	private int x;
+	private float y = 1000.0f;
+	private String name = "Korea";
+	
+	
+	//»ı¼ºÀÚ (°´Ã¼ »ı¼ºÀÇ ¿ªÇÒ / ¹İµå½Ã »ı¼ºÀÚÀÇ ÀÌ¸§Àº Å¬·¡½º¸í°ú °°¾Æ¾ß ÇÑ´Ù. and return Å¸ÀÔ ÀÚÃ¼°¡ ¾ø´Ù.)	
+	public Foo() { 
+		System.out.println("»ı¼ºÀÚ:Constructor");
+	}
+	
+	//¸Ş¼Òµå ( ¼Ó¼º, »ı¼ºÀÚ, ¸Ş¼ÒµåÀÇ ¼ø¼­´Â ¹Ù²ğ ¼ö ÀÖ´Ù. )
+	public void sayHello() { 
+		int x = 100; // Áö¿ª¹ø¼ö (local variable)
 		System.out.println("Hello.");
 	}
-	
-	public void setX(int num) {
-		x = num;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public int add(int x, int y) {
+	public int add(int x, int y) { 
 		int result = x + y;
 		return result;
 	}
 }
+
+//Å¬·¡½º ¹Ù·Î ¹Ø¿¡¼­ ¼±¾ğµÇ¾î ÀÖ´Â °Íµé(»ı¼ºÀÚ Á¦¿Ü)À» ¸â¹ö ¶ó°íµµ ºÎ¸¥´Ù. (Á¤È®ÇÑ Á¤ÀÇ no, ½±°Ô ¼³¸í À§ÇÑ °Í)
+//±×·¯¸é ¸â¹ö ¼Ó¼º, ¸â¹ö ¸Ş¼Òµå°¡ ÀÖ´Âµ¥ ¸Ş¼Òµå¸¦ ¸â¹ö ¸Ş¼Òµå¶ó ºÎ¸£Áö´Â ¾Ê±â ¶§¹®¿¡ ¼Ó¼ºÀ» ¸â¹ö variable ÀÌ¶ó°í »ı°¢ÇÏ¸é µÈ´Ù.
+// ¸â¹ö: »ı¼ºµÈ ÀÚ¹Ù °´Ã¼°¡ °¡Áö°í ÀÖ´Â ¼Ó¼º°ú ¸Ş¼Òµå(Á¤È®ÇÑ ¼³¸í)
+//1898 1967 1981

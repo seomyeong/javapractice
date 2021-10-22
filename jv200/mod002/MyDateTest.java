@@ -3,17 +3,14 @@ package jv200.mod002;
 public class MyDateTest {
 
 	public static void main(String[] args) {
-		MyDate myBirthDay = new MyDate();		
-		myBirthDay.setYear(2005);
-		myBirthDay.setMonth(10);
-		myBirthDay.setDay(23);
+		MyDate myBirthDay = new MyDate();
 		
-//		myBirthDay.year=2005;
-//		myBirthDay.month=10;
-//		myBirthDay.day=23;
-//		
-//		System.out.println("ìƒë…„ì›”ì¼ = "+myBirthDay.year+"-"+myBirthDay.month+"-"+myBirthDay.day);
-		System.out.println("ìƒë…„ì›”ì¼ = "+myBirthDay.getDetails());
-	}
-
+		myBirthDay.setYear(1993);
+		myBirthDay.setMonth(8);
+		myBirthDay.setDay(24);
+		
+//		System.out.println("³» »ıÀÏ : " + myBirthDay.getYear() + "-" + myBirthDay.getMonth() + "-"+ myBirthDay.getDay());
+		System.out.println("³» »ıÀÏ : " + myBirthDay.getDetails());
+	}		
 }
+//12¹ø ¶óÀÎÃ³·³ÇÏÁö ¾Ê°í 13¹ø ¶óÀÎÃ³·³ ÇÏ´Â °ÍÀÌ ´õ ÆíÇÏÁö. ±×¸®°í getDetails¸¦ »ıÀÏÀÌ ¾Æ´Ï¶ó ´Ù¸¥ ¹¹ Á¹¾÷ÀÏ  µîµîÀ¸·Îµµ »ç¿ëÇÒ ¼ö ÀÖ°ÚÁö. ÀÌ·¸°Ô »ı°¢ÇØ¼­ ¼³°èÇÏ´Â °ÍÀÌ Oop Áï °´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹Ö.

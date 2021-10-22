@@ -2,22 +2,14 @@ package jv200.mod002;
 
 public class DogTest {
 
-//	public static void main(String[] args) {
-//		Dog d = new Dog(); //ê°ì²´ìƒì„±
-//		//ê°ì²´ì˜ ë©¤ë²„ ì ‘ê·¼
-//		d.setWeight(15); //ëª¸ë¬´ê²Œë¥¼ í• ë‹¹
-//		int w = d.getWeight(); //ëª¸ë¬´ê²Œë¥¼ ì¡°íšŒ
-//		
-//		
-//		System.out.println("ëª¸ë¬´ê²Œ = "+w);
-//		System.out.println("ëª¸ë¬´ê²Œ = "+d.weight);
-//	}
-	
 	public static void main(String[] args) {
-		Dog d = new Dog();
-		d.setWeight(5);
-		System.out.println(d.weight);
+		Dog d = new Dog(); // °´Ã¼ »ı¼º
+		d.setWeight(15); // ¸ö¹«°Ô¸¦ ÇÒ´ç
+		int w = d.getWeight(); // ¸ö¹«°Ô¸¦ °¡Á®¿À´Â °Í.
+		System.out.println("¸ö¹«°Ô = " + w);
+		System.out.println("¸ö¹«°Ô = " + d.weight);
+		// d.weight´Â Dog Å¬·¡½º¿¡ ¼±¾ğµÇ¾î ÀÖ´Âµ¥ private·Î ¼±¾ğÇÏ¸é ¿¡·¯³ª°í publicÀ¸·Î ¼±¾ğÇÏ¸é ¿¡·¯°¡ ³ªÁö ¾Ê´Â´Ù. Á¢±ÙÁ¦ÇÑÀÚ(private, public)´Â Á¢±Ù °¡´É¿©ºÎ¸¦ ³ªÅ¸³½´Ù.
+		
 	}
-	
 
 }
